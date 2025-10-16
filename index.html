@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Teachable AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Train Your AI</h1>
+  <video id="webcam" autoplay playsinline width="224" height="224"></video>
+  <div id="buttons">
+    <button onclick="addExample(0)">Class A</button>
+    <button onclick="addExample(1)">Class B</button>
+    <button onclick="predict()">Predict</button>
+  </div>
+  <h2 id="prediction">Prediction: </h2>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/knn-classifier"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+  <script src="app.js"></script>
+</body>
+</html>
